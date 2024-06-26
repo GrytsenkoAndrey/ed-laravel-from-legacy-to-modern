@@ -26,7 +26,7 @@ FROM php:8.2-fpm-alpine
 
 JIT compilation is not enabled by default. You need to configure PHP to use it. This is typically done through the php.ini configuration file.
 
-Look for the opcache.jit_buffer_size and opcache.jit directives. Uncomment them if they exist, otherwise add them:
+Look for the **opcache.jit_buffer_size** and **opcache.jit** directives. Uncomment them if they exist, otherwise add them:
 
 ```
 opcache.jit_buffer_size=100M
